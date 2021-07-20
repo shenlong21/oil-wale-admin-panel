@@ -1,0 +1,382 @@
+
+      
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2"> <i class="fas fa-home"></i> Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      
+
+      <div class="p-2">
+        <!-- overview  -->
+        <div class="py-3 d-flex" style="flex-wrap: wrap;" >
+          <div class="p-1 m-2 border bg-white rounded shadow" >
+            <div class="d-flex align-items-center" >
+              <div class="p-2 ">
+                <span class="h1 text-center">159</span>
+              </div>
+              <div class="p-2">
+                <div class="text-center">
+                  <i class="fas fa-wrench fa-2x"></i> <br>
+                  Total Affiliated Garages
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-1 m-2 border bg-white rounded shadow" >
+            <div class="d-flex align-items-center">
+              <div class="p-2 ">
+                <span class="h1 text-center">20,714</span>
+              </div>
+              <div class="p-2">
+                <div class="text-center">
+                  <i class="fas fa-users fa-2x"></i> <br>
+                  Total Serving Customers
+                </div>
+              </div>
+            </div>
+          </div>    
+          <div class="p-1 m-2 border bg-white rounded shadow">
+            <div class="d-flex align-items-center">
+              <div class="p-2 ">
+                <span class="h1 text-center">57,20,714</span>
+              </div>
+              <div class="p-2">
+                <div class="text-center">
+                  <i class="fas fa-road fa-2x"></i> <br>
+                  Total KM Tracked
+                </div>
+              </div>
+            </div>
+          </div>                             
+        </div>
+       <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+
+        <!-- <div class=" m-2 bg-white">
+          <div class="p-2 border-bottom">
+            <h4 class="h4"> <i class="fas fa-tags"></i> Recent Service </h2>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th>#</th>
+                  <th>Date</th>
+                  <th>Customer</th>
+                  <th>Phone</th>
+                  <th>Service Name</th>
+                  <th>Area</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>01/03/2021, 19:15</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>Engine Oil Change</td>
+                  <td>Navrangprura</td>
+                  <td><button class="btn btn-warning">Open</button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>05/12/2021, 11:10</td>
+                  <td>Hayak Salma</td>
+                  <td>+915789564856</td>
+                  <td>Brake Oil Change</td>
+                  <td>Chandkheda</td>
+                  <td><button class="btn btn-info">Ongoing</button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>01/03/2021, 19:15</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>Petrol Refil</td>
+                  <td>Vatva</td>
+                  <td><button class="btn btn-success"> <i class="fas fa-check"></i> Completed</button></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>01/03/2021, 19:15</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>Engine Oil Change</td>
+                  <td>Navrangprura</td>
+                  <td><button class="btn btn-warning">Open</button></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>01/03/2021, 19:15</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>Servicing</td>
+                  <td>Navrangprura</td>
+                  <td><button class="btn btn-secondary">Cancelled</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> -->
+
+
+        <div class=" m-2 bg-white shadow rounded">
+          <div class="p-2 border-bottom">
+            <h4 class="h4"> <i class="fas fa-users"></i> Recent Customers </h2>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th>#</th>
+                  <th>Customer</th>
+                  <th>Phone</th>
+                  <th>KM Reading</th>
+                  <th>Next Appointment</th>
+                  <th>Vehicle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>15223</td>
+                  <td>15/03/2022</td>
+                  <td>Splender</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Hayak Salma</td>
+                  <td>+915789564856</td>
+                  <td>20002</td>
+                  <td>09/05/2023</td>
+                  <td>Bajaj Pulsar (2018)</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>86859</td>
+                  <td>01/03/2022</td>
+                  <td>Yamaha R1</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>45124</td>
+                  <td>01/03/2022</td>
+                  <td>Quadbike</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>49568</td>
+                  <td>01/03/2022</td>
+                  <td>Bajaj Discover</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class=" mx-2 mt-4 bg-white shadow rounded ">
+          <div class="p-2 border-bottom">
+            <h4 class="h4"> <i class="fas fa-wrench"></i> Affiliated Garages </h2>
+          </div>
+
+          <div class="table-responsive ">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Total Customers</th>
+                  <th>Next Appointment</th>
+                  <th>Vehicle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>15223</td>
+                  <td>15/03/2022</td>
+                  <td>Splender</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Hayak Salma</td>
+                  <td>+915789564856</td>
+                  <td>20002</td>
+                  <td>09/05/2023</td>
+                  <td>Bajaj Pulsar (2018)</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>86859</td>
+                  <td>01/03/2022</td>
+                  <td>Yamaha R1</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>45124</td>
+                  <td>01/03/2022</td>
+                  <td>Quadbike</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Patel Nisarg</td>
+                  <td>+915789564856</td>
+                  <td>49568</td>
+                  <td>01/03/2022</td>
+                  <td>Bajaj Discover</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="mx-2 mt-4 bg-white shadow rounded">
+          <h4 class="h4 p-2 border-bottom"> <i class="fas fa-object-ungroup"></i> Current Schemes </h2>
+            <div class="list-group list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small>3 days ago</small>
+                </div>
+                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                <small>And some small print.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                <small class="text-muted">And some muted small print.</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">List group item heading</h5>
+                  <small class="text-muted">3 days ago</small>
+                </div>
+                <p class="mb-1">Some placeholder content in a paragraph.</p>
+                <small class="text-muted">And some muted small print.</small>
+              </a>
+            </div>
+            
+          <!-- <div class="d-flex" style="flex-wrap: wrap;">
+
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12 m-2 shadow">
+              <div class="">
+                <img class="img-thumbnail" src="mpl.jpeg" alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12 m-2 shadow">
+              <div class="">
+                <img class="img-thumbnail" src="mpl.jpeg" alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12 m-2 shadow">
+              <div class="">
+                <img class="img-thumbnail" src="mpl.jpeg" alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12-3 m-2 shadow">
+              <div class="">
+                <img class="img-thumbnail" src="mpl.jpeg" alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12-3 m-2 shadow">
+              <div class="">
+                <img class="img-thumbnail" src="mpl.jpeg" alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12-3 m-2 shadow">
+              <div class="">
+                <img src="mpl.jpeg" class="img-thumbnail"  alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+
+            <div class="card p-2 text-center col-lg-3 col-md-5 col-sm-12-3 m-2 shadow">
+              <div class="">
+                <img src="mpl.jpeg" class="img-thumbnail"  alt="">
+                <hr>
+              </div>
+              <p class="lead mt-2" style="font-weight: 600; text-transform: uppercase;">10% off on engine oil</p>
+              <p>Flat 10% off on engine oil replacement on these areas - Navrangpura, Valol, Vatva, Chandkheda, Galaxy</p>
+              <div class="pt-2 justify-content-between">
+                <button class="btn btn-success">Currently Active</button>
+              </div>
+            </div>
+
+          </div>   -->
+        
+        </div>
+
+      </div>
+      
+

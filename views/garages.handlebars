@@ -1,0 +1,223 @@
+
+      
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2"> <i class="fas fa-wrench"></i> Garages</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <!-- <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div> -->
+          <button type="button" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="collapse" data-bs-target="#garageAddForm" aria-expanded="false" aria-controls="garageAddForm">
+              <i class="fas fa-plus"></i> Add Garage
+          </button>
+        </div>
+      </div>
+      <div class=" w-100 d-flex justify-content-center  shadow-sm">
+
+      <div class="collapse mx-2 col-lg-8 col-md-10 col-sm-12 border-bottom mb-3  " id="garageAddForm">
+        <div class="py-2 border-bottom">
+          <h5 class="h5"> <i class="fas fa-chevron-right"></i> Add Garage</h5>
+        </div>
+        <form class=" p-3">
+          <!-- Garage person:- Personal Name,Garage Name,Address,Image,Credits,Phone Number,Pin Code -->
+          <div class="row mb-3">
+              <label for="Full_Name" class="col-sm-2 col-form-label">Full Name</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Full_Name">
+              </div>
+          </div>
+          <div class="row mb-3">
+              <label for="Garage_Name" class="col-sm-2 col-form-label">Garage Name</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Garage_Name">
+              </div>
+          </div>
+          <div class="row mb-3">
+              <label for="Phone_Number" class="col-sm-2 col-form-label">Phone Number</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Phone_Number">
+              </div>
+          </div>
+          <div class="row mb-3">
+            <label for="Phone_Number_alt" class="col-sm-2 col-form-label">Alternate Number</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Phone_Number_alt">
+            </div>
+        </div>
+          <div class="row mb-3">
+              <label for="Address" class="col-sm-2 col-form-label">Address</label>
+              <div class="col-sm-10">
+                  <textarea name="" class="form-control" id="Address" cols="" rows="5"></textarea>
+              </div>
+          </div>
+          <div class="row mb-3">
+              <label for="Pincode" class="col-sm-2 col-form-label">Pincode</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Pincode">
+              </div>
+          </div>
+          <div class="row mb-3">
+              <label for="Area" class="col-sm-2 col-form-label">Area</label>
+              <div class="col-sm-10">
+                  <select id="Area" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>Naroda</option>
+                      <option>Navrangprura</option>
+                      <option>Bapunagar</option>
+                      <option>Saraspur</option>
+                      <option>Kalupur</option>
+                      <option>Chamuda</option>
+                      <option>Memco</option>
+                  </select>
+              </div>
+          </div>
+
+          <div class="row mb-3">
+              <label for="Garage_Image" class="col-sm-2 col-form-label">Garage Image</label>
+              <div class="col-sm-10">
+                  <input type="file" name="" id="Garage_Image">
+              </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+    </div>
+
+
+      <!-- table starts -->
+      <div class="py-3">
+        <div class="py-2 border-bottom">
+          <h5 class="h5"> <i class="fas fa-chevron-right"></i> All Garages</h5>
+        </div>
+        <div class=" mx-2 mt-4 bg-white shadow rounded ">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover rounded text-center">
+              <thead class="table-secondary">
+                <tr class="">
+                  <th>#</th>
+                  <th>Name of Garage</th>
+                  <th>Owner Name</th>
+                  <th>Phone</th>
+                  <th>Area</th>
+                  <th>Photo</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>All Repair Shop</td>
+                  <td>Patel Satyam</td>
+                  <td>+915789564856</td>
+                  <td>Area 51</td>
+                  <td><img src="garagejpg.jpg" alt="Garage img" height="100px"></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>All Repair Shop</td>
+                  <td>Patel Satyam</td>
+                  <td>+915789564856</td>
+                  <td>Area 51</td>
+                  <td><img src="garagejpg.jpg" alt="Garage img" height="100px"></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>All Repair Shop</td>
+                  <td>Patel Satyam</td>
+                  <td>+915789564856</td>
+                  <td>Area 51</td>
+                  <td><img src="garagejpg.jpg" alt="Garage img" height="100px"></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>All Repair Shop</td>
+                  <td>Patel Satyam</td>
+                  <td>+915789564856</td>
+                  <td>Area 51</td>
+                  <td><img src="garagejpg.jpg" alt="Garage img" height="100px"></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>All Repair Shop</td>
+                  <td>Patel Satyam</td>
+                  <td>+915789564856</td>
+                  <td>Area 51</td>
+                  <td><img src="garagejpg.jpg" alt="Garage img" height="100px"></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+<!-- table ends -->
+      
+<!-- activities starts -->
+      <div class="pt-5">
+        <div class="py-2 border-bottom">
+          <h5 class="h5"> <i class="fas fa-chevron-right"></i> Recent activities in Garages</h5>
+        </div>
+        <div class="py-2">
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item">12/02/2021, 19:15 --> An item</li>
+            <li class="list-group-item">12/02/2021, 19:15 --> A second item</li>
+            <li class="list-group-item">12/02/2021, 19:15 --> A third item</li>
+            <li class="list-group-item">12/02/2021, 19:15 --> A fourth item</li>
+            <li class="list-group-item">12/02/2021, 19:15 --> And a fifth one</li>
+          </ul>
+
+          <!-- <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+
+            </tbody>
+          </table> -->
+        </div>
+      </div>
+
+
+    

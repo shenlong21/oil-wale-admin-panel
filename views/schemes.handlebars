@@ -1,0 +1,149 @@
+
+      
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2"> <i class="fas fa-object-ungroup"></i> Schemes</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <!-- <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div> -->
+          <button type="button" class="btn btn-sm btn-outline-secondary"  data-bs-toggle="collapse" data-bs-target="#garageAddForm" aria-expanded="false" aria-controls="garageAddForm">
+              <i class="fas fa-plus"></i> Add Scheme
+          </button>
+        </div>
+      </div>
+
+      <div class="collapse mx-2 col-lg-8 col-md-10 col-sm-12 border-bottom mb-3" id="garageAddForm">
+        <div class="py-2 border-bottom">
+          <h5 class="h5"> <i class="fas fa-chevron-right"></i> New Scheme</h5>
+        </div>
+        <form class=" p-3">
+
+          <div class="row mb-3">
+              <label for="Product_Name" class="col-sm-2 col-form-label">Scheme Name</label>
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Product_Name">
+              </div>
+          </div>
+
+          <div class="row mb-3">
+              <label for="Specification" class="col-sm-2 col-form-label">Description</label>
+              <div class="col-sm-10">
+                  <textarea name="" class="form-control" id="Specification" cols="" rows="5"></textarea>
+              </div>
+          </div>
+          
+          <div class="row mb-3">
+              <label for="status" class="col-sm-2 col-form-label">Status</label>
+              <div class="col-sm-10">
+                  <select name="status" id="status" class="form-select">
+                    <option value="2">Scheduled</option>
+                    <option value="1">Open</option>
+                    <option value="0">Concluded</option>
+                  </select>
+              </div>
+          </div>
+         
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      </div>
+
+      <!-- table starts -->
+      <div class="py-3">
+        <div class="py-2 border-bottom">
+          <h5 class="h5"> <i class="fas fa-chevron-right"></i> All Schemes</h5>
+        </div>
+        <div class=" mx-2 mt-4 bg-white shadow rounded ">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover rounded text-center">
+              <thead class="table-secondary">
+                <tr class="">
+                  <th>#</th>
+                  <th>Name of scheme</th>
+                  <th>Description</th>
+                  <!-- <th>Grade</th> -->
+                  <!-- <th>Quantity</th> -->
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anniverary Scheme</td>
+                  <td>50% off on 100% products</td>
+                  <!-- <td>4th Garde</td> -->
+                  <!-- <td> <span class="badge bg-primary">5 ltr</span> </td> -->
+                  <td><span class="badge bg-success">Active</span></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Holi Day Celebrations</td>
+                  <td>30% off on 100% products</td>
+                  <!-- <td>4th Garde</td> -->
+                  <!-- <td> <span class="badge bg-primary">5 ltr</span> </td> -->
+                  <td><span class="badge bg-secondary">Concluded</span></td>
+                  <td> 
+                    <button class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Details" ><i class="fas fa-info-circle"></i></button> 
+                    <button class="btn btn-outline-warning"><i class="fas fa-pen"></i></button> 
+                    <button class="btn btn-outline-danger"><i class="fas fa-trash"></i></button> 
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+<!-- table ends -->
+      
+<!-- activities starts -->
+      <div class="pt-5">
+        <div class="py-2 border-bottom">
+          <h5 class="h5"> <i class="fas fa-chevron-right"></i> Schemes Accepted By</h5>
+        </div>
+        <div class="py-2">
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item">12/02/2021 --> <a href="#">@Ghanshyam Garage</a> accepted <a href="#">#Anniverrsary Scheme</a> </li>
+            <li class="list-group-item">12/02/2021 --> <a href="#">@Jain Garage</a>  accepted <a href="#">#Anniverrsary Scheme</a></li>
+            <li class="list-group-item">12/02/2021 --> <a href="#">@Kardam Garage</a>  accepted <a href="#">#Anniverrsary Scheme</a></li>
+            <li class="list-group-item">12/02/2021 --> <a href="#">@Amir Garages</a>  accepted <a href="#">#Anniverrsary Scheme</a></li>
+            <li class="list-group-item">12/02/2021 --> <a href="#">@Quick Fix Garage</a>  accepted <a href="#">#Holi Celebrations Scheme</a></li>
+          </ul>
+
+          <!-- <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+              <tr>
+                <td>12/02/2021, 19:15</td>
+                <td>A long description of some activity</td>
+              </tr>
+
+            </tbody>
+          </table> -->
+        </div>
+      </div>
+
+
