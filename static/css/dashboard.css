@@ -12,6 +12,29 @@
  * Sidebar
  */
 
+.navbar-color {
+  background-image: linear-gradient(75deg, white, #ff8a65, #e64a19 );
+
+  background-color:  #8E8E8E;
+  /* background-color:  #e64a19 !important; */
+  
+}
+
+.account-dropdown {
+  background-color: #fbe9e7 !important;
+}
+
+.accent-border {
+  border: solid #ffab91 2px;
+}
+
+.accent-color-light {
+  background-color: #fbe9e7 !important;
+  /* background-color: #fbe9e7 !important; */
+  /* background-image: linear-gradient(135deg, white, #ff8a65 ); */
+
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -24,6 +47,10 @@
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /*Height of navbar*/
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background-color: #ff5722 !important;
+  /* background-image: linear-gradient(360deg, white, #ff8a65, #e64a19 ); */
+  /* background-color: #ff5722 !important; */
+
 }
 
 @media (max-width: 767.98px) {
@@ -85,20 +112,28 @@
 
 .active-tab {
  
-  background-color: #1f71e4;
-  color: white !important;
+  /* background-color: #ff8a65; */
+  background-color: #bf360c;
+  /* background-color: #e64a19; */
+  /* color: white !important; */
   
 }
 
 .tab-item {
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
+  /* border-left: solid #ff5722 5px; */
+
   
 }
 
 .tab-item:hover {
-  background-color: #377fe2;
-  color: white !important;
+  background-color: #bf360c;
+  /* border-left: solid #bf360c 5px; */
+
+  /* border-left: solid #e64a19 7px; */
+  /* border-bottom: solid #e64a19 3px; */
+  /* color: white !important; */
 }
 
 .user-img {

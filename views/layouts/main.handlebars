@@ -37,75 +37,126 @@
   <body>
     
 
-    <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">  <i class="fas fa-oil-can px-1"></i> OIL WALE</a>
+    <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow navbar-color">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 " href="#">  <i class="fas fa-oil-can px-1"></i> OIL WALE</a>
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-   
+      <div class="dropstart px-4 d-none d-md-block ">
+        <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="user-img mr-1" src="{{user.profile_img}}" alt="User" height="40px" width="40px">
+        </a>
+
+        {{!-- <ul class="" aria-labelledby="">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> --}}
+        <div class="dropdown-menu  dropdown-menu-start p-3 account-dropdown accent-border " aria-labelledby="dropdownMenuLink">
+          <div class="text-center">
+            
+            <img class="user-img mr-1" src="{{user.profile_img}}" alt="User" height="90px" width="90px">
+          
+            <div class="col-12 pt-2 ">
+              {{user.name}}
+            </div>
+          </div>
+          <hr class="">
+          <div class="col-12">
+            <ul class="list-group-flush px-0">
+              <li class="list-group-item account-dropdown"><a href="#">Profile</a></li>
+              <li class="list-group-item account-dropdown"><a href="#">Activities</a></li>
+              {{!-- <li class="list-group-item account-dropdown"><a href="#">Something else here</a></li> --}}
+            </ul>
+
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-danger btn-sm">Log Out</button>
+            </div>
+          </div>
+         
+          {{!-- <div class="col-12 text-muted ">
+            <small class="mb-1 "> <i class="fas fa-envelope"></i> {{user.name}}</small>
+          </div>
+          <div class=" col-12  text-muted">              
+            <small class="mb-1 "> <i class="fas fa-mobile"></i> {{user.mobile}}</small>                
+          </div>
+          some text to display --}}
+        </div>
+
+      </div>
+      {{!-- <div class="">
+          <div class="d-flex justify-content-spaced-around align-items-center">
+            <div class="mr-1">
+            </div>
+            
+            
+              
+          </div>
+        </div> --}}
     </header>
 <div class="container-fluid">
   <div class="row">
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="position-sticky pt-3">
-        <div class="w-100 p-3 ">
-          <div class="d-flex justify-content-spaced-between ">
-
-            <img class="user-img" src="{{user.profile_img}}" alt="User" height="60px" width="60px">
-            <div>
-
-              <div class="col-12 text-muted text-sm-start">
-                <small class="mb-1"> <i class="fas fa-envelope"></i> {{user.name}}</small>
+        <div class="w-100 p-2 d-md-none">
+          <div class="d-flex justify-content-spaced-around align-items-center">
+            <div class="mr-1">
+              <img class="user-img mr-1" src="{{user.profile_img}}" alt="User" height="60px" width="60px">
+            </div>
+            
+            <div class="m-1">
+              <div class="col-12 text-muted ">
+                <small class="mb-1 text-light"> <i class="fas fa-envelope"></i> {{user.name}}</small>
               </div>
-              <div class=" col-12 text-muted">
-                
-                <small class="mb-1"> <i class="fas fa-mobile"></i> {{user.mobile}}</small>
-                
+              <div class=" col-12  text-muted">              
+                <small class="mb-1 text-light"> <i class="fas fa-mobile"></i> {{user.mobile}}</small>                
               </div>
             </div>
               
           </div>
         </div>
         <ul class="nav flex-column">
-          <li class="nav-item pt-1">
-            <a class="nav-link tab-item {{#if page_dashboard}} active-tab {{/if}}"  href="/">
+          <li class="nav-item pt-1 ">
+            <a class="nav-link tab-item text-light {{#if page_dashboard}} active-tab {{/if}}"  href="/">
               <i class="fas fa-home"></i>
               Dashboard
             </a>
           </li>
           
           <li class="nav-item pt-1">
-            <a class="nav-link tab-item {{#if page_garage}} active-tab {{/if}}" href="/garages">
+            <a class="nav-link tab-item text-light {{#if page_garage}} active-tab {{/if}}" href="/garages">
               <i class="fas fa-wrench"></i>
               Garages
             </a>
           </li>
+
+          
           <li class="nav-item pt-1">
-            <a class="nav-link tab-item {{#if page_customers}} active-tab {{/if}}" href="/customers">
+            <a class="nav-link tab-item text-light {{#if page_customers}} active-tab {{/if}}" href="/customers">
               <i class="fas fa-users"></i>
               Customers
             </a>
           </li>
           <li class="nav-item pt-1">
-            <a class="nav-link tab-item {{#if page_products}} active-tab {{/if}}" href="/products">
+            <a class="nav-link tab-item text-light {{#if page_products}} active-tab {{/if}}" href="/products">
               <i class="fas fa-tags"></i>
               Products
             </a>
           </li>
           <li class="nav-item pt-1">
-            <a class="nav-link tab-item {{#if page_vehicles}} active-tab {{/if}}" href="/vehicles">
+            <a class="nav-link tab-item text-light {{#if page_vehicles}} active-tab {{/if}}" href="/vehicles">
               <i class="fas fa-motorcycle"></i>
               Vehicles
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link tab-item {{#if page_schemes}} active-tab {{/if}}" href="/schemes">
+          <li class="nav-item pt-1">
+            <a class="nav-link tab-item text-light {{#if page_schemes}} active-tab {{/if}}" href="/schemes">
               <i class="fas fa-object-ungroup"></i>
               Schemes
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link tab-item {{#if page_accounts}} active-tab {{/if}}" href="accounts">
+          <li class="nav-item pt-1">
+            <a class="nav-link tab-item text-light {{#if page_accounts}} active-tab {{/if}}" href="accounts">
               <i class="fas fa-user-circle"></i>
               Manage Accouts
             </a>
@@ -115,19 +166,19 @@
         <hr>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
-            <a class="nav-link tab-item" href="#">
+            <a class="nav-link tab-item text-light" href="#">
               <i class="fas fa-user"></i>
               My Account
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link tab-item" href="#">
+          <li class="nav-item pt-1">
+            <a class="nav-link tab-item text-light" href="#">
               <i class="fas fa-clipboard-list"></i>
               My Activities
             </a>
           </li>        
-          <li class="nav-item">
-            <a class="nav-link tab-item" href="#">
+          <li class="nav-item pt-1">
+            <a class="nav-link tab-item text-light" href="#">
               <i class="fas fa-sign-out-alt"></i>
               Logout
             </a>
@@ -136,7 +187,7 @@
       </div>
     </nav>
 
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-light">
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-light accent-color-light">
       
       
       

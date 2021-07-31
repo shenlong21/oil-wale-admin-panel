@@ -1,6 +1,12 @@
 const express = require('express')
 const router = express.Router()
+const path = require('path')
 // const app = express()
+
+router.get('/login', function (req, res) {
+    res.render(
+        path.join('authViews', 'login'), { layout: 'login' });
+});
 
 
 router.get('/', function (req, res) {
@@ -11,7 +17,10 @@ router.get('/', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('dashboard', {user, page_dashboard: true});
+    res.render(path.join('panelView', 'dashboard'), {
+        user, 
+        page_dashboard: true
+    });
 });
 
 router.get('/garages', function (req, res) {
@@ -22,7 +31,7 @@ router.get('/garages', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('garages', {user, page_garage: true});
+    res.render(path.join('panelView', 'garages'), {user, page_garage: true});
 });
 
 router.get('/accounts', function (req, res) {
@@ -33,7 +42,7 @@ router.get('/accounts', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('accounts', {user, page_accounts: true});
+    res.render(path.join('panelView', 'accounts'), {user, page_accounts: true});
 });
 
 router.get('/customers', function (req, res) {
@@ -44,7 +53,7 @@ router.get('/customers', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('customers', {user, page_customers: true});
+    res.render(path.join('panelView', 'customers'), {user, page_customers: true});
 });
 
 router.get('/products', function (req, res) {
@@ -55,7 +64,7 @@ router.get('/products', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('products', {user, page_products: true});
+    res.render(path.join('panelView', 'products'), {user, page_products: true});
 });
 
 router.get('/vehicles', function (req, res) {
@@ -66,7 +75,7 @@ router.get('/vehicles', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('vehicles', {user, page_vehicles: true});
+    res.render(path.join('panelView', 'vehicles'), {user, page_vehicles: true});
 });
 
 router.get('/schemes', function (req, res) {
@@ -77,7 +86,7 @@ router.get('/schemes', function (req, res) {
         profile_img: '/img/user.png'
     }
 
-    res.render('schemes', {user, page_schemes: true});
+    res.render(path.join('panelView', 'schemes'), {user, page_schemes: true});
 });
 
 module.exports = router
